@@ -19,6 +19,7 @@ public class Find_pass_cl extends LoginPage_cl {
     EditText name, id; //이름, 아이디 적는 칸
     ImageView back; //뒤로가기 버튼
     Button Complete; //비밀번호 찾기 버튼
+    TextView tv_result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +30,7 @@ public class Find_pass_cl extends LoginPage_cl {
         id = findViewById(R.id.find_id);
         back = findViewById(R.id.back_button5);
         Complete = findViewById(R.id.find_button2);
+        tv_result = findViewById(R.id.tv_check2);
 
         Complete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +58,7 @@ public class Find_pass_cl extends LoginPage_cl {
 //                                email.putExtra(Intent.EXTRA_TEXT, "회원님의 비밀번호는 : " + findPass + " 입니다.");
 //                                startActivity(email);
                             } else {
-                                Toast.makeText(getApplicationContext(), "정보에 맞는 비번이 없는데?", Toast.LENGTH_SHORT).show();
+                                tv_result.setVisibility(View.VISIBLE);
                             }
                         } catch (Exception e) {
                             e.printStackTrace();

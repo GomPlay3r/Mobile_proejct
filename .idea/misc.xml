@@ -3,12 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/change_name_btn_cancle.xml" value="0.1805" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/change_name_btn_s.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/find_id_result_yaho.xml" value="0.1775" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/first_main_button_shape.xml" value="0.1775" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/overlap_fail.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/overlap_success.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/app_bar_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_email.xml" value="0.2" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_name.xml" value="0.25" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_name_btn_s.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_nn.xml" value="0.25" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_pass.xml" value="0.33" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/content_main.xml" value="0.2" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/find_id_result.xml" value="0.25" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/first_main.xml" value="0.36614583333333334" />
@@ -20,8 +28,9 @@
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/main_.xml" value="0.358695652173913" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/nav_header_main.xml" value="0.36614583333333334" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/pass_reset.xml" value="0.33" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/reset_pass_success.xml" value="0.36614583333333334" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/search_id.xml" value="0.33" />
-        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/search_pass.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/search_pass.xml" value="0.33" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/sign_up_page.xml" value="0.25" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/sign_up_page2.xml" value="0.358695652173913" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/menu/app_bar_main.xml" value="0.36614583333333334" />

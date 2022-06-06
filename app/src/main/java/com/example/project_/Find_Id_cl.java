@@ -20,7 +20,7 @@ public class Find_Id_cl extends LoginPage_cl {
     ImageButton back_button; //뒤로가기 버튼임
     EditText name, email; //이름, 이메일 적는 칸임
     Button Complete; //아이디 찾기 버튼임.
-    TextView si_bal;
+    TextView tv_result_fail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class Find_Id_cl extends LoginPage_cl {
         name = findViewById(R.id.find_name1);
         email = findViewById(R.id.find_email);
         Complete = findViewById(R.id.find_button1);
+        tv_result_fail = findViewById(R.id.tv_check);
 
         Complete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,12 +48,12 @@ public class Find_Id_cl extends LoginPage_cl {
                             boolean success = jsonObject.getBoolean("success");
                             if (success) {
                                 String findID = jsonObject.getString("ID");
-                                Intent intent = new Intent(Find_Id_cl.this,Find_ID_result.class);
-                                intent.putExtra("ID",findID);
+                                Intent intent = new Intent(Find_Id_cl.this, Find_ID_result.class);
+                                intent.putExtra("ID", findID);
                                 startActivity(intent);
                                 finish();
                             } else {
-                                Toast.makeText(Find_Id_cl.this, "정보에 맞는 아이디가 없는데?", Toast.LENGTH_SHORT).show();
+                                tv_result_fail.setVisibility(View.VISIBLE);
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
