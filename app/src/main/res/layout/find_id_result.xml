@@ -26,7 +26,7 @@
         android:layout_marginEnd="307dp"
         android:layout_marginBottom="601dp"
         android:adjustViewBounds="true"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/back" />
+        app:srcCompat="@drawable/backbtn" />
 
     <TextView
         android:id="@+id/textView6"

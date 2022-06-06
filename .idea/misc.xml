@@ -10,6 +10,7 @@
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/overlap_fail.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/overlap_success.xml" value="0.1805" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/sign_up_edittext.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/app_bar_main.xml" value="0.36614583333333334" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_email.xml" value="0.2" />
@@ -33,6 +34,7 @@
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/search_pass.xml" value="0.33" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/sign_up_page.xml" value="0.25" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/sign_up_page2.xml" value="0.358695652173913" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/store_information.xml" value="0.36614583333333334" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/menu/app_bar_main.xml" value="0.36614583333333334" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/menu/main_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/xml/network_security_config.xml" value="0.13451086956521738" />
