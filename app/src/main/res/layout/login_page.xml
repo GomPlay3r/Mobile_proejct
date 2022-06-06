@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginBottom="656dp"
+        android:background="#d4d4ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/back_button1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="307dp"
+        android:layout_marginBottom="601dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="258dp"
+        android:layout_marginBottom="515dp"
+        android:text="로그인"
+        android:textColor="#7d75f5"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.74" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="461dp"
+        android:text="회원 서비스를 이용하기 위해 로그인을 진행해주세요"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/loginId"
+        android:layout_width="297.3dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="348dp"
+        android:background="@drawable/login_page_idshape"
+        android:hint="아이디"
+        android:paddingStart="8.7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383" />
+
+    <EditText
+        android:id="@+id/loginPass"
+        android:layout_width="297.3dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="296dp"
+        android:background="@drawable/login_page_idshape"
+        android:hint="비밀번호"
+        android:paddingLeft="8.7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <CheckBox
+        android:id="@+id/autologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="자동 로그인"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <CheckBox
+        android:id="@+id/rmbId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디 기억"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.723"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="298.3dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#9690F6"
+        android:text="로그인"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/search_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="465dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="50dp"
+        android:text="아이디 찾기"
+        android:textColor="#8E8E8E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/search_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="464dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="50dp"
+        android:text="비밀번호 찾기"
+        android:textColor="#8E8E8E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <TextView
+        android:id="@+id/sign_Up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="463dp"
+        android:layout_marginBottom="50dp"
+        android:text="회원가입"
+        android:textColor="#8E8E8E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.77"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.509" />
+</androidx.constraintlayout.widget.ConstraintLayout>
