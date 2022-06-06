@@ -26,7 +26,8 @@ public class Signup_cl2 extends Signup_cl {
     Button Complete; //회원가입 완료 버튼
     TextView overlap, tv_nn; //중복검사
     private boolean validate = false;
-//중복 체크 안하면 안넘어가게 해야됨 ㅇㅇ 그거 추가해야됨
+
+    //중복 체크 안하면 안넘어가게 해야됨 ㅇㅇ 그거 추가해야됨
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,34 +85,38 @@ public class Signup_cl2 extends Signup_cl {
         Complete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               if(!validate) {
-                   Toast.makeText(getApplicationContext(),"닉네임 중복 체크를 해주세영!",Toast.LENGTH_SHORT).show();
-               }
+                if (!validate) {
+                    Toast.makeText(getApplicationContext(), "닉네임 중복 체크를 해주세영!", Toast.LENGTH_SHORT).show();
+                }
                 String Name = name.getText().toString();
                 String NN = nn.getText().toString();
-                Response.Listener responseListener = new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        try {
-                            JSONObject jsonObject = new JSONObject(response);
-                            boolean success = jsonObject.getBoolean("success");
+                if (Name.equals("") || NN.equals("")) {
+                    Toast.makeText(Signup_cl2.this, "모든 정보를 입력했냐고씨발련아", Toast.LENGTH_SHORT).show();
+                } else {
+                    Response.Listener responseListener = new Response.Listener<String>() {
+                        @Override
+                        public void onResponse(String response) {
+                            try {
+                                JSONObject jsonObject = new JSONObject(response);
+                                boolean success = jsonObject.getBoolean("success");
 
-                            if (success) {
-                                Toast.makeText(getApplicationContext(), "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
-                                Intent go_login = new Intent(Signup_cl2.this, LoginPage_cl.class);
-                                startActivity(go_login);
-                                finish();
-                            } else {
-                                Toast.makeText(getApplicationContext(), "회원가입에 실패하였습니다.", Toast.LENGTH_SHORT).show();
+                                if (success) {
+                                    Toast.makeText(getApplicationContext(), "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
+                                    Intent go_login = new Intent(Signup_cl2.this, LoginPage_cl.class);
+                                    startActivity(go_login);
+                                    finish();
+                                } else {
+                                    Toast.makeText(getApplicationContext(), "회원가입에 실패하였습니다.", Toast.LENGTH_SHORT).show();
+                                }
+                            } catch (Exception e) {
+                                e.printStackTrace();
                             }
-                        } catch (Exception e) {
-                            e.printStackTrace();
                         }
-                    }
-                };
-                RegisterRequest registerRequest = new RegisterRequest(ID, Pass, Email, Name, NN, responseListener);
-                RequestQueue queue = Volley.newRequestQueue(Signup_cl2.this);
-                queue.add(registerRequest);
+                    };
+                    RegisterRequest registerRequest = new RegisterRequest(ID, Pass, Email, Name, NN, responseListener);
+                    RequestQueue queue = Volley.newRequestQueue(Signup_cl2.this);
+                    queue.add(registerRequest);
+                }
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

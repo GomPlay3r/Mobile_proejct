@@ -56,19 +56,20 @@ public class Signup_cl extends MainActivity {
                             JSONObject jsonObject = new JSONObject(response);
                             boolean success = jsonObject.getBoolean("success");
                             if (success) {
-                                if(id.getText().toString().equals("")) {
+                                if (id.getText().toString().equals("")) {
                                     overlap_text.setText("아이디를 입력해주세요");
-                                }
-                                else {
+                                } else {
                                     overlap_text.setTextColor(Color.parseColor("#002bff"));
                                     overlap_text.setText("사용가능 한 아이디 입니다.");
                                     id.setEnabled(false);
                                     validate = true;
+                                    id.setBackgroundResource(R.drawable.overlap_success);
                                 }
                             } else {
                                 Log.d("edit", id.getText().toString());
                                 overlap_text.setTextColor(Color.parseColor("#ff0000"));
                                 overlap_text.setText("중복된 아이디 입니다.");
+                                id.setBackgroundResource(R.drawable.overlap_fail);
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -91,15 +92,15 @@ public class Signup_cl extends MainActivity {
                 String Pass = password.getText().toString();
                 String Email = email.getText().toString();
 
-                if (ID.equals("") || Pass.equals("") || Email.equals(""))
+                if (ID.equals("") || Pass.equals("") || Email.equals("")) {
                     Toast.makeText(getApplicationContext(), "모든 정보가 입력되었는지 다시 한번 확인해주세요!", Toast.LENGTH_SHORT).show();
-
-                Intent intent = new Intent(Signup_cl.this, Signup_cl2.class);
-                intent.putExtra("ID", ID);
-                intent.putExtra("Pass", Pass);
-                intent.putExtra("Email", Email);
-                startActivity(intent);
-
+                } else {
+                    Intent intent = new Intent(Signup_cl.this, Signup_cl2.class);
+                    intent.putExtra("ID", ID);
+                    intent.putExtra("Pass", Pass);
+                    intent.putExtra("Email", Email);
+                    startActivity(intent);
+                }
             }
         });
 
