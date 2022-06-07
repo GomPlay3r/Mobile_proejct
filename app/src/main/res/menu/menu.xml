@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 메뉴이름 -->
+    <item android:title="메뉴">
+        <menu>
+            <!-- 메뉴 종류 -->
+            <item
+                android:id="@+id/brand"
+                android:icon="@drawable/brand"
+                android:title="브랜드"/>
+            <item
+                android:id="@+id/product"
+                android:icon="@drawable/product"
+                android:title="상품종류별"/>
+            <item
+                android:id="@+id/online"
+                android:icon="@drawable/online"
+                android:title="온라인중고" />
+
+            <item
+                android:id="@+id/store"
+                android:icon="@drawable/store"
+                android:title="매장찾기" />
+
+            <item
+                android:id="@+id/information"
+                android:icon="@drawable/personal_information"
+                android:title="개인설정" />
+        </menu>
+    </item>
+
+</menu>

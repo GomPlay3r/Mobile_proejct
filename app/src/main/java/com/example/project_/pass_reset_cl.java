@@ -65,9 +65,9 @@ public class pass_reset_cl extends Find_pass_cl {
                         }
                     };
                     //ID Intent로 줘야함. 메인에서.
-                    Reset_Pass_Request reset_pass_request = new Reset_Pass_Request(ID,Pass1,responseListener);
-                    RequestQueue queue = Volley.newRequestQueue(pass_reset_cl.this);
-                    queue.add(reset_pass_request);
+                    //Reset_Pass_Request reset_pass_request = new Reset_Pass_Request(ID,Pass1,responseListener);
+                    //RequestQueue queue = Volley.newRequestQueue(pass_reset_cl.this);
+                    //queue.add(reset_pass_request);
                 }
             }
         });

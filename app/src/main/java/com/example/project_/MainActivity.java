@@ -1,6 +1,9 @@
 package com.example.project_;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import com.google.android.material.navigation.NavigationView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,4 +39,6 @@ public class MainActivity extends AppCompatActivity {
         });
         //우리 앱의 가장 첫 번째 메인 화면인 로그인 회원가입 화면임 누르면 각자 맞는 화면으로 이동함.
     }
+
+
 }
