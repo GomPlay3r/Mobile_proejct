@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/change_name_btn_c.xml" value="0.1205" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/change_name_btn_s.xml" value="0.1205" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/find_id_result_yaho.xml" value="0.1205" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/first_main_button_shape.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/login_page_idshape.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/overlap_fail.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/overlap_success.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/search_bar.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/sign_up_edittext.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/store_search.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/activity_main_manu.xml" value="0.1" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/change_email.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/change_name.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/change_nn.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/change_pass.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/find_id_result.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/first_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/layout_navigation_header.xml" value="0.1" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/login_page.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/main_.xml" value="0.264" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/main_menu.xml" value="0.176" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/menu.xml" value="0.152" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/pass_reset.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/reset_pass_success.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/search_id.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/sign_up_page.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/sign_up_page2.xml" value="0.17255434782608695" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/store_information.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/test.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/menu/menu.xml" value="0.109375" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/change_name_btn_cancle.xml" value="0.1805" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/change_name_btn_s.xml" value="0.1805" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/find_id_result_yaho.xml" value="0.1775" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/first_main_button_shape.xml" value="0.1775" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1805" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/overlap_fail.xml" value="0.1805" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/overlap_success.xml" value="0.1805" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/sign_up_edittext.xml" value="0.1805" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/app_bar_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_email.xml" value="0.2" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_name.xml" value="0.25" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_name_btn_s.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_nn.xml" value="0.25" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/change_pass.xml" value="0.33" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/content_main.xml" value="0.2" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/find_id_result.xml" value="0.25" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/first_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/fragment_brand.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/fragment_filter.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/fragment_home.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/jooje.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/login_page.xml" value="0.358695652173913" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/main_.xml" value="0.358695652173913" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/nav_header_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/pass_reset.xml" value="0.33" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/reset_pass_success.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/search_id.xml" value="0.33" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/search_pass.xml" value="0.33" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/sign_up_page.xml" value="0.25" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/sign_up_page2.xml" value="0.358695652173913" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/layout/store_information.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/menu/app_bar_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/menu/main_menu.xml" value="0.36614583333333334" />
+        <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/xml/network_security_config.xml" value="0.13451086956521738" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/change_pass.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/find_id_result.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/first_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/layout_navigation_header.xml" value="0.33" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/main_.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/main_menu.xml" value="0.17097264437689969" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/pass_reset.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/reset_pass_success.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/search_id.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/search_pass.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/sign_up_page.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/store_information.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/test.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/menu/menu.xml" value="0.262037037037037" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
