@@ -2,6 +2,7 @@ package com.example.project_;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -43,25 +44,24 @@ public class LoginPage_cl extends MainActivity {
                 final String ID = id.getText().toString();
                 final String Pass = pass.getText().toString();
 
-              Response.Listener<String> responseListener = new Response.Listener<String>() {
+                Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             boolean success = jsonObject.getBoolean("success");
-                            if(success) {
-                                Toast.makeText(LoginPage_cl.this,"로그인 성공",Toast.LENGTH_SHORT).show();
-                                Intent go_main = new Intent(LoginPage_cl.this,main_menu.class);
-                                Intent put_ID = new Intent(LoginPage_cl.this,header_xml_info.class);
-                                put_ID.putExtra("ID",ID);
-                                startActivity(put_ID);
+                            String Name = jsonObject.getString("Name");
+                            if (success) {
+                                Toast.makeText(LoginPage_cl.this, "로그인 성공", Toast.LENGTH_SHORT).show();
+                                Intent go_main = new Intent(LoginPage_cl.this, main_menu.class);
+                                go_main.putExtra("Name", Name);
                                 startActivity(go_main);
                                 finish();
                             } else {
-                                Toast.makeText(LoginPage_cl.this,"로그인 실패",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginPage_cl.this, "로그인 실패", Toast.LENGTH_SHORT).show();
 
                             }
-                        }catch (Exception e) {
+                        } catch (Exception e) {
                             e.printStackTrace();
                         }
                     }

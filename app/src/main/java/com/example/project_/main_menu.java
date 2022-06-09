@@ -4,13 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.google.android.material.navigation.NavigationView;
-import android.app.Activity;
 
-public class main_menu extends LoginPage_cl  {
+import android.app.Activity;
+import android.widget.TextView;
+
+public class main_menu extends LoginPage_cl {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +28,12 @@ public class main_menu extends LoginPage_cl  {
                 drawerLayout.openDrawer(GravityCompat.START);
             }
         });
+        Intent intent = getIntent();
+        String Name = intent.getStringExtra("Name");
         NavigationView navigationView = findViewById(R.id.navigationView);
+        View HeaderView = navigationView.getHeaderView(0);
+        TextView tv_user_name = (TextView) HeaderView.findViewById(R.id.tv_main_name);
+        tv_user_name.setText(Name+"님!");
         navigationView.setItemIconTintList(null);
-        //얘를 레이아웃이 열리게 하는게 아니라
-        //클래스가 열리게 해야됨
     }
 }

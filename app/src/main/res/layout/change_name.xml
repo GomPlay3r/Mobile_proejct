@@ -19,7 +19,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/back_button6"
+        android:id="@+id/back_change_name"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="1dp"
@@ -75,6 +75,7 @@
         app:layout_constraintVertical_bias="0.505" />
 
     <EditText
+        android:id="@+id/edt_name1"
         android:layout_width="320dp"
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
@@ -92,6 +93,7 @@
         app:layout_constraintVertical_bias="0.72" />
 
     <EditText
+        android:id="@+id/edt_name2"
         android:layout_width="320dp"
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
@@ -109,6 +111,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
+        android:id="@+id/name_btn_cancel"
         android:layout_width="70dp"
         android:layout_height="35dp"
         android:background="@drawable/change_name_btn_c"
@@ -122,6 +125,7 @@
         app:layout_constraintVertical_bias="0.581" />
 
     <Button
+        android:id="@+id/name_btn_save"
         android:layout_width="70dp"
         android:layout_height="35dp"
         android:background="@drawable/change_name_btn_s"

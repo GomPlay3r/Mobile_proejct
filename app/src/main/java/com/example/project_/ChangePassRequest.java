@@ -9,11 +9,11 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Reset_Pass_Request extends StringRequest {
+public class ChangePassRequest extends StringRequest {
     final static private String URL = "http://10.0.2.2/test/changePass.php";
     private Map<String, String> parameters;
 
-    public Reset_Pass_Request(String ID, String Pass, Response.Listener<String> listener) {
+    public ChangePassRequest(String ID, String Pass, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         parameters = new HashMap<>();

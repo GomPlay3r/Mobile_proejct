@@ -9,16 +9,16 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Reset_Pass_Request extends StringRequest {
-    final static private String URL = "http://10.0.2.2/test/changePass.php";
+public class ChangeNNRequest extends StringRequest {
+    final static private String URL = "http://10.0.2.2/test/changeNN.php";
     private Map<String, String> parameters;
 
-    public Reset_Pass_Request(String ID, String Pass, Response.Listener<String> listener) {
+    public ChangeNNRequest(String ID, String NN, Response.Listener<String> listener) {
         super(Method.POST, URL, listener, null);
 
         parameters = new HashMap<>();
         parameters.put("ID", ID);
-        parameters.put("Pass", Pass);
+        parameters.put("NN", NN);
     }
 
     @Nullable

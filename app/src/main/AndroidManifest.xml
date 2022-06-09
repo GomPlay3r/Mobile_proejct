@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Project_"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Loading"
+            android:name=".user_info"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,8 +32,11 @@
         <activity android:name=".pass_reset_cl" />
         <activity android:name=".Find_ID_result" />
         <activity android:name=".Reset_Pass_Result" />
-        <activity android:name=".header_xml_info" />
-        <activity android:name=".main_menu"/>
+        <activity android:name=".main_menu" />
+        <activity android:name=".change_name" />
+        <activity android:name=".change_nn" />
+        <activity android:name=".change_email" />
+        <activity android:name=".change_pass" />
     </application>
 
 </manifest>
