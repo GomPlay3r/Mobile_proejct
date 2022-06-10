@@ -13,8 +13,9 @@
 
         <!-- 타이틀 바 -->
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
+            android:layout_height="65dp"
             android:background="#d4d4ff"
             android:gravity="center_vertical"
             android:orientation="horizontal"
@@ -22,35 +23,137 @@
             android:paddingEnd="15dp"
             app:layout_constraintTop_toTopOf="parent">
 
+
             <!-- 누르면 메뉴 나오게 하는 이미지 아이콘 -->
             <ImageView
                 android:id="@+id/imageMenu"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:contentDescription="@string/app_name"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
                 android:src="@drawable/main_cat_non_text" />
 
-            <!-- 프로젝트 이름, 아마 이거 지우고 검색창 넣을 듯 -->
-            <TextView
-                android:id="@+id/textTitle"
+            <!-- 검색창 -->
+            <EditText
+                android:id="@+id/searchBar"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:background="@drawable/search_bar"
+                android:gravity="center_vertical"
+                android:hint="검색"
+                android:padding="5dp"
+                android:textSize="15sp" />
+
+            <ImageButton
+                android:id="@+id/ball"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/ball" />
+
+        </LinearLayout>
+
+        <!-- Viewpager2 화면 제작 -->
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:gravity="center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout3"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="-16dp">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="410dp"
+                android:layout_height="150dp"
+                android:layout_gravity="top"
+                android:layout_margin="65dp">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:scaleType="fitXY" />
+
+                <!-- 이미지를 넘길 때의 위치 표시 -->
+                <me.relex.circleindicator.CircleIndicator3
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="160dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="추천상품"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toTopOf="@+id/gallery"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                <TextView
+                    android:id="@+id/allView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="130dp"
+                    android:text="전체보기"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/gallery"
+                    app:layout_constraintLeft_toRightOf="@+id/textView1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:text="@string/app_name"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+                android:layout_height="wrap_content"/>
 
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <!-- 이미지 누르면 옆으로 메뉴 슬라이드 -->
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_gravity="start"
         app:headerLayout="@layout/layout_navigation_header"
-        app:menu="@menu/menu"
-        android:layout_gravity="start"/>
+        app:menu="@menu/menu" />
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -13,29 +13,47 @@
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/overlap_fail.xml" value="0.255" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/overlap_success.xml" value="0.255" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/search_bar.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/selector_indicator.xml" value="0.1165" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/sign_up_edittext.xml" value="0.255" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/drawable/store_search.xml" value="0.255" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/Recycle_menu.xml" value="0.12454710144927536" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/activity_main_manu.xml" value="0.1" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/change_email.xml" value="0.22826086956521738" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/change_name.xml" value="0.22826086956521738" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/change_nn.xml" value="0.22826086956521738" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/change_pass.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/dialog.xml" value="0.24947916666666667" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/find_id_result.xml" value="0.22826086956521738" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/first_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/layout_navigation_header.xml" value="0.1" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/frame_1.xml" value="0.264" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/frame_2.xml" value="0.10400000000000001" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/frame_3.xml" value="0.10520833333333333" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/gallery.xml" value="0.12132725430597771" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/grid_item.xml" value="0.17346014492753623" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/grid_view.xml" value="0.23822463768115942" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/item_list.xml" value="0.24947916666666667" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/item_slider.xml" value="0.2368659420289855" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/layout_navigation_header.xml" value="0.2" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/list_view.xml" value="0.24947916666666667" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/listview_item.xml" value="0.2" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/listview_tv.xml" value="0.11930091185410334" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/login_page.xml" value="0.22826086956521738" />
-        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/main_.xml" value="0.264" />
-        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/main_menu.xml" value="0.176" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/main_.xml" value="0.23157894736842105" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/main_menu.xml" value="0.2" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/menu.xml" value="0.152" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/pass_reset.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/recycler_item.xml" value="0.24947916666666667" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/reset_pass_success.xml" value="0.22826086956521738" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/search_id.xml" value="0.22826086956521738" />
-        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/sign_up_page.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/search_pass.xml" value="0.24365942028985507" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/sign_up_page.xml" value="0.152" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/sign_up_page2.xml" value="0.17255434782608695" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/store_information.xml" value="0.22826086956521738" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/layout/test.xml" value="0.22826086956521738" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/menu/grid_item.xml" value="0.2453125" />
         <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/menu/menu.xml" value="0.109375" />
+        <entry key="..\:/Mobile_app/Mobile_proejct1/app/src/main/res/menu/selector_indicator.xml" value="0.10520833333333333" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/change_name_btn_cancle.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/change_name_btn_s.xml" value="0.1805" />
         <entry key="..\:/androidsibal/NakSeo/Project_/app/src/main/res/drawable/find_id_result_yaho.xml" value="0.1775" />
