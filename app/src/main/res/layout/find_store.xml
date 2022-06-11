@@ -8,7 +8,6 @@
         android:id="@+id/view2"
         android:layout_width="match_parent"
         android:layout_height="65dp"
-        android:layout_marginBottom="666dp"
         android:background="#d4d4ff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -18,7 +17,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
-        android:id="@+id/back_button6"
+        android:id="@+id/back_user_info"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="1dp"
@@ -40,36 +39,40 @@
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="매장정보"
+        android:text="매장찾기"
         android:textColor="#151515"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="parent" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094">
-    </View>
+        app:layout_constraintTop_toTopOf="@+id/view2" />
 
-    <EditText
-        android:layout_width="261dp"
-        android:layout_height="24.3dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginEnd="65dp"
-        android:background="@drawable/store_search"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="531dp"
+        android:text="고객님과 가장 가까운 매장을 쉽게 찾아보세요!"
+        android:textColor="#151515"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.104" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:layout_width="221dp"
+        android:layout_height="33dp"
+
+        android:layout_marginTop="133dp"
+        android:layout_marginBottom="473dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

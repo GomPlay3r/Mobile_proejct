@@ -75,18 +75,27 @@
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/drawable/ractangle.xml" value="0.1755" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/drawable/search_bar.xml" value="0.1755" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/drawable/sign_up_edittext.xml" value="0.1755" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/drawable/store_search.xml" value="0.1755" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/drawable/user_info_change_btn.xml" value="0.1755" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/drawable/user_info_view.xml" value="0.1755" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/activity_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/brand.xml" value="0.33" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/brand_fragment.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/change_email.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/change_name.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/change_nn.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/change_pass.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/dialog.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/find_id_result.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/find_store.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/first_main.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/frame_1.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/frame_2.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/layout_navigation_header.xml" value="0.33" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/listview_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/listview_tv.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/main_.xml" value="0.2" />
-        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/main_menu.xml" value="0.17097264437689969" />
+        <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/main_menu.xml" value="0.22" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/pass_reset.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/reset_pass_success.xml" value="0.36614583333333334" />
         <entry key="..\:/mobile/Mobile_proejct-master/app/src/main/res/layout/search_id.xml" value="0.36614583333333334" />
