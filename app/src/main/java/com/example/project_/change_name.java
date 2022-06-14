@@ -1,10 +1,14 @@
 package com.example.project_;
 
 import android.annotation.SuppressLint;
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -26,6 +30,7 @@ public class change_name extends user_info {
     ImageButton back_btn;
     Button cancel, save;
     EditText name1, name2;
+    Dialog dialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,9 +43,12 @@ public class change_name extends user_info {
         name1 = findViewById(R.id.edt_name1);
         name2 = findViewById(R.id.edt_name2);
 
-        //임시용 변수
-        String ID = "test";
+        dialog = new Dialog(com.example.project_.change_name.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.change_name_success);
 
+        Intent get_ID = getIntent();
+        String ID = get_ID.getStringExtra("ID");
 
         back_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +72,6 @@ public class change_name extends user_info {
                     Toast.makeText(change_name.this, "성과 이름을 모두 입력해주세요.", Toast.LENGTH_SHORT).show();
                 } else if (!Pattern.matches("^[가-힣]*$", Name)) {
                     Toast.makeText(change_name.this, "성과 이름은 한글로만 입력해주세요.", Toast.LENGTH_SHORT).show();
-                    //다이얼로그로 수정할 것임.
                 } else {
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
                         @Override
@@ -72,9 +79,6 @@ public class change_name extends user_info {
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
                                 String New_Name = jsonObject.getString("Name");
-                                Log.d("이름 변경 테스트", "바뀐 이름 -> " + New_Name);
-                                //완료됐다는 다이얼로그 넣기.
-                                //다이얼로그 뜨고 확인 누르면 다시 개인설정으로 돌아가게 ㄱㄱ
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -83,8 +87,25 @@ public class change_name extends user_info {
                     ChangeNameRequest changeNameRequest = new ChangeNameRequest(ID, Name, responseListener);
                     RequestQueue queue = Volley.newRequestQueue(change_name.this);
                     queue.add(changeNameRequest);
+                    showDialog01();
                 }
 
+            }
+        });
+    }
+
+    public void showDialog01() {
+        WindowManager.LayoutParams params = dialog.getWindow().getAttributes();
+        params.width = 800;
+        params.height = 650;
+        dialog.getWindow().setAttributes(params);
+        dialog.show();
+        dialog.findViewById(R.id.dialog_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent login_again = new Intent(change_name.this, LoginPage_cl.class);
+                startActivity(login_again);
+                dialog.dismiss();
             }
         });
     }

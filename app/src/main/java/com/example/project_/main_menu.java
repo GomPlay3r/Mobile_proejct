@@ -12,14 +12,20 @@ import androidx.viewpager2.widget.ViewPager2;
 import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
 import com.google.android.material.navigation.NavigationView;
 
 import android.app.Activity;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -30,10 +36,10 @@ public class main_menu extends LoginPage_cl {
     private FragmentStateAdapter pagerAdapter;
     private int num_page = 2;
     private CircleIndicator3 mIndicator;
-    TextView userName;
     private RecyclerView mRecyclerView;
     private ArrayList<RecycleViewItem> mList;
     private RecycleViewAdapter mRecyclerViewAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,26 +56,41 @@ public class main_menu extends LoginPage_cl {
         });
         Intent intent = getIntent();
         String Name = intent.getStringExtra("Name");
+        String ID = intent.getStringExtra("ID");
+        String NN = intent.getStringExtra("NN");
+        String Email = intent.getStringExtra("Email");
+        String Pass = intent.getStringExtra("Pass");
+
         NavigationView navigationView = findViewById(R.id.navigationView);
         View HeaderView = navigationView.getHeaderView(0);
         TextView tv_user_name = (TextView) HeaderView.findViewById(R.id.tv_main_name);
-        tv_user_name.setText(Name+"님!");
+        tv_user_name.setText(Name + "님!");
         navigationView.setItemIconTintList(null);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()){
+                switch (item.getItemId()) {
                     case R.id.brand:
-                        Toast.makeText(main_menu.this, "브랜드", Toast.LENGTH_SHORT).show(); break;
+                        Toast.makeText(main_menu.this, "브랜드", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.product:
-                        Toast.makeText(main_menu.this, "제품별", Toast.LENGTH_SHORT).show(); break;
+                        Toast.makeText(main_menu.this, "제품별", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.online:
-                        Toast.makeText(main_menu.this, "온라인", Toast.LENGTH_SHORT).show(); break;
+                        Intent go_online = new Intent(main_menu.this, online_used.class);
+                        startActivity(go_online);
+                        break;
                     case R.id.store:
-                        Toast.makeText(main_menu.this, "매장", Toast.LENGTH_SHORT).show(); break;
+                        Toast.makeText(main_menu.this, "매장", Toast.LENGTH_SHORT).show();
+                        break;
                     case R.id.information:
-                        Intent go_info = new Intent(main_menu.this,user_info.class);
+                        Intent go_info = new Intent(main_menu.this, user_info.class);
+                        go_info.putExtra("Name", Name);
+                        go_info.putExtra("ID", ID);
+                        go_info.putExtra("NN", NN);
+                        go_info.putExtra("Email", Email);
+                        go_info.putExtra("Pass", Pass);
                         startActivity(go_info);
                         break;
                 }

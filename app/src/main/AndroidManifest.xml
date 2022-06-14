@@ -15,7 +15,7 @@
         android:theme="@style/Theme.Project_"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Find_store"
+            android:name=".Loading"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,6 +39,7 @@
         <activity android:name=".change_nn" />
         <activity android:name=".change_email" />
         <activity android:name=".change_pass" />
+        <activity android:name=".online_used"/>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"

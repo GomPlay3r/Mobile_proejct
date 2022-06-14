@@ -1,9 +1,13 @@
 package com.example.project_;
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -24,6 +28,7 @@ public class change_email extends user_info {
     ImageButton back;
     EditText email;
     Button cancel, save;
+    Dialog dialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,9 +41,12 @@ public class change_email extends user_info {
         save = findViewById(R.id.change_email_save);
 
         Pattern emailPattern = Patterns.EMAIL_ADDRESS;
+        dialog = new Dialog(change_email.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.change_email_success);
 
-        //테스트용 임시변수
-        String ID = "test";
+        Intent get_ID = getIntent();
+        String ID = get_ID.getStringExtra("ID");
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,7 +64,6 @@ public class change_email extends user_info {
             @Override
             public void onClick(View view) {
                 String Email = email.getText().toString();
-                Log.d("이름 테스트", "이름은 : " + Name);
                 if (email.equals("")) {
                     Toast.makeText(change_email.this, "성과 이름을 모두 입력해주세요.", Toast.LENGTH_SHORT).show();
                 } else if (!emailPattern.matcher(Email).matches()) {
@@ -80,7 +87,24 @@ public class change_email extends user_info {
                     ChangeEmailRequest changeEmailRequest = new ChangeEmailRequest(ID, Email, responseListener);
                     RequestQueue queue = Volley.newRequestQueue(change_email.this);
                     queue.add(changeEmailRequest);
+                    showDialog01();
                 }
+            }
+        });
+    }
+
+    public void showDialog01() {
+        WindowManager.LayoutParams params = dialog.getWindow().getAttributes();
+        params.width = 900;
+        params.height = 650;
+        dialog.getWindow().setAttributes(params);
+        dialog.show();
+        dialog.findViewById(R.id.dialog_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent login_again = new Intent(change_email.this, LoginPage_cl.class);
+                startActivity(login_again);
+                dialog.dismiss();
             }
         });
     }

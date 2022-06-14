@@ -51,10 +51,19 @@ public class LoginPage_cl extends MainActivity {
                             JSONObject jsonObject = new JSONObject(response);
                             boolean success = jsonObject.getBoolean("success");
                             String Name = jsonObject.getString("Name");
+                            String ID = jsonObject.getString("ID");
+                            String NN = jsonObject.getString("NN");
+                            String Email = jsonObject.getString("Email");
+                            String Pass = jsonObject.getString("Pass");
                             if (success) {
                                 Toast.makeText(LoginPage_cl.this, "로그인 성공", Toast.LENGTH_SHORT).show();
                                 Intent go_main = new Intent(LoginPage_cl.this, main_menu.class);
                                 go_main.putExtra("Name", Name);
+                                go_main.putExtra("ID", ID);
+                                go_main.putExtra("NN", NN);
+                                go_main.putExtra("Email", Email);
+                                go_main.putExtra("Pass", Pass);
+
                                 startActivity(go_main);
                                 finish();
                             } else {

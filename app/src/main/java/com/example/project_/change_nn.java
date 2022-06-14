@@ -1,8 +1,12 @@
 package com.example.project_;
 
+import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -23,6 +27,7 @@ public class change_nn extends user_info {
     ImageButton back;
     EditText nn;
     Button cancel, save;
+    Dialog dialog;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,8 +39,13 @@ public class change_nn extends user_info {
         cancel = findViewById(R.id.change_nn_cancel);
         save = findViewById(R.id.change_nn_save);
 
-        //테스트용 임시변수
-        String ID = "test";
+        dialog = new Dialog(change_nn.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.change_nn_success);
+
+        Intent get_ID = getIntent();
+        String ID = get_ID.getStringExtra("ID");
+
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,10 +77,6 @@ public class change_nn extends user_info {
                         public void onResponse(String response) {
                             try {
                                 JSONObject jsonObject = new JSONObject(response);
-                                String New_NN = jsonObject.getString("NN");
-                                Log.d("닉네임 테스트", "바뀐 닉네임 -> " + New_NN);
-                                //완료됐다는 다이얼로그 넣기.
-                                //다이얼로그 뜨고 확인 누르면 다시 개인설정으로 돌아가게 ㄱㄱ
                             } catch (Exception e) {
                                 e.printStackTrace();
                             }
@@ -79,7 +85,24 @@ public class change_nn extends user_info {
                     ChangeNNRequest changeNNRequest = new ChangeNNRequest(ID, NN, responseListener);
                     RequestQueue queue = Volley.newRequestQueue(change_nn.this);
                     queue.add(changeNNRequest);
+                    showDialog01();
                 }
+            }
+        });
+    }
+
+    public void showDialog01() {
+        WindowManager.LayoutParams params = dialog.getWindow().getAttributes();
+        params.width = 800;
+        params.height = 650;
+        dialog.getWindow().setAttributes(params);
+        dialog.show();
+        dialog.findViewById(R.id.dialog_btn).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent login_again = new Intent(com.example.project_.change_nn.this, LoginPage_cl.class);
+                startActivity(login_again);
+                dialog.dismiss();
             }
         });
     }
